@@ -1,0 +1,412 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/tz/ontologies/2023/3/videogames/"
+     xml:base="http://www.semanticweb.org/tz/ontologies/2023/3/videogames/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#awarded_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#awarded_to">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#received_award"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameAward"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#contains">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#part_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Series"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#designed_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#designed_by">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#designer_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Designer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#designer_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#designer_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Designer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#developed_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#developed_by">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#developer_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Developer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#developer_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#developer_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Developer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#directed_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#directed_by">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#director_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Director"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#director_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#director_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#distributed_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#distributed_by">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#distributer_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Distributor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#distributer_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#distributer_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Distributor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#has_genre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#has_genre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#has_language -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#has_language">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Language"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#part_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#part_of">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Series"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#published_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#published_by">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#publisher_of"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Publisher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#publisher_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#publisher_of">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#received_award -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#received_award">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameAward"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#supports_platform -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#supports_platform">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#OperatingSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#birth_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#birth_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#OperatingSystem"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#rating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#rating">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#release_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#release_date">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameAward"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Genre"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Language"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Organization"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Series"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Designer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Designer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Developer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Developer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Distributor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Distributor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Game -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Game"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameAgents -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameAgents"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameAward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameAward"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameRelatedProduct -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameRelatedProduct">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Image -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Image">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameRelatedProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Language -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Language"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#OperatingSystem -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#OperatingSystem"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameAgents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Publisher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Publisher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Series -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Series"/>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Trailer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Trailer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameRelatedProduct"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#VideoGame">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Game"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Game"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameAgents"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#GameAward"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Genre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#Language"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/tz/ontologies/2023/3/videogames#OperatingSystem"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
